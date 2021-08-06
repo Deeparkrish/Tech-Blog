@@ -30,14 +30,6 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
           },
-          // Url link of the post 
-          post_url: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-              isURL: true
-            }
-          },
           // refer to User the made the blog post 
           user_id: {
             type: DataTypes.INTEGER,
