@@ -3,6 +3,8 @@
 const { Model, DataTypes } = require('sequelize');
 // connection to db 
 const sequelize = require('../config/connection');
+// import bcrypt ofr pwd authentication 
+const bcrypt = require('bcrypt');
 
 // User Model ineriting Model class 
  class User extends Model{}
@@ -49,14 +51,28 @@ const sequelize = require('../config/connection');
             }
           }
     },
-
-    {// Table configuration options
-        sequelize,
-        timestamps: false,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'user'
+    // set up beforeCreate lifecycle "hook" functionality
+    {
+      hooks: {
+      //execute the bcrypt hash function on the plaintext password, 
+      // set up befre creating a user record in the table         
+      async beforeCreate(newUserData) {
+          // 10 -is the saltround called costfactors - syas number of times hashing algo is executed
+          newUserData.password = await bcrypt.hash(newUserData.password, 10);
+          return newUserData; //  return the hashed password 
+        },
+      // set up beforeUpdate lifecycle "hook" functionality
+    async beforeUpdate(updatedUserData) {
+    updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+    return updatedUserData;
+  }
+      },
+          // table defintions 
+          sequelize,
+          timestamps: false,
+          freezeTableName: true,
+          underscored: true,
+          modelName: 'user'
     }
-     
  )
  module.exports =User;
