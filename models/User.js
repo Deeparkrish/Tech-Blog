@@ -1,4 +1,5 @@
 // import Model and Data types from Sequelize
+// use the special Sequelize DataTypes object provide what type of data it is
 const { Model, DataTypes } = require('sequelize');
 // connection to db 
 const sequelize = require('../config/connection');
@@ -12,11 +13,11 @@ const sequelize = require('../config/connection');
     {
          // define an id column
           id: {
-            // use the special Sequelize DataTypes object provide what type of data it is
+            // an integer 
             type: DataTypes.INTEGER,
-            // this is the equivalent of SQL's `NOT NULL` option
+            // cant be null 
             allowNull: false,
-            // instruct that this is the Primary Key
+            // Primary Key of the table 
             primaryKey: true,
             // turn on auto increment
             autoIncrement: true
@@ -24,15 +25,16 @@ const sequelize = require('../config/connection');
           // define a username column
           username: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false // cant be null
           },
           // define an email column
           email: {
             type: DataTypes.STRING,
+            // cannot be NULL
             allowNull: false,
-            // there cannot be any duplicate email values in this table
+            // no duplicate email values 
             unique: true,
-            // if allowNull is set to false, we can run our data through validators before creating the table data
+            // check if its in valid email  format 
             validate: {
               isEmail: true
             }
@@ -42,8 +44,8 @@ const sequelize = require('../config/connection');
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-              // this means the password must be at least four characters long
-              len: [4]
+              // the password must be at least 8 characters long
+              len: [8]
             }
           }
     },
@@ -57,3 +59,4 @@ const sequelize = require('../config/connection');
     }
      
  )
+ module.exports =User;
