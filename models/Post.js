@@ -47,5 +47,5 @@ Post.init(
         modelName: 'post'
     }
 )
-
+// Make the model accessible to other part of applicaitons 
 module.exports = Post;
