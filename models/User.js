@@ -7,7 +7,12 @@ const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
 // User Model ineriting Model class 
- class User extends Model{}
+ class User extends Model{
+  // function to compare  pwd in db and pwd user enters to log in 
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password); // returns true if they match
+  } 
+ }
 
  //initialize the model's data and configuration
  User.init(

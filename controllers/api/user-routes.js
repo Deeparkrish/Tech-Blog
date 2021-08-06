@@ -90,4 +90,28 @@ router.delete('/:id', (req, res) => {
     });
 });
 
+router.post('/login', (req, res) => {
+  // expects the user email upon login 
+    User.findOne({
+      where: {
+        email: req.body.email  //verify email 
+      }
+    }).then(dbUserData => {
+      // If the email is not found 
+      if (!dbUserData) {
+        res.status(400).json({ message: 'No user with that email address!' });
+        return;
+      }
+      //If email matches   verify password 
+      const validPassword = dbUserData.checkPassword(req.body.password); // check if password is correct 
+      // if password is incorrect 
+      if (!validPassword) {
+        res.status(400).json({ message: 'Incorrect password!' });
+        return;
+      }
+      // if passowrd is correct 
+      res.json({ user: dbUserData,message: 'You are now logged in!'});
+  
+    });  
+  });
 module.exports = router;
