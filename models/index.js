@@ -32,4 +32,4 @@ User.hasMany(Post, {
     onDelete: 'SET NULL'
   });
   
-  module.exports = { User, Post, Comment };
+  module.exports = { User, Post, Comment};

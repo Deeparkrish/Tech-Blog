@@ -4,8 +4,8 @@ const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
-const helpers = require('./utils/helpers');
-const hbs = exphbs.create({helpers});
+// const helpers = require('./utils/helpers');
+// const hbs = exphbs.create({helpers});
 const session = require('express-session');
 const { truncate } = require('fs/promises');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -31,8 +31,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public'))); // middleware take contents from public folder 
 // handlebar - template engine 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', hbs.engine);
+// app.set('view engine', 'handlebars');
 // turn on routes
 app.use(routes);
 app.use(session(sess)); // session 
