@@ -1,5 +1,5 @@
 // import Model and Data types from Sequelize
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, Sequelize } = require('sequelize');
 // connection to db 
 const sequelize = require('../config/connection');
 
@@ -41,7 +41,7 @@ Post.init(
     },
     {// Table configuration options
         sequelize,
-        timestamps: false,
+        timestamps: true,
         freezeTableName: true,
         underscored: true,
         modelName: 'post'

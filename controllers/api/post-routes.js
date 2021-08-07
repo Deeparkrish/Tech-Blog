@@ -4,15 +4,31 @@ const { Post, User, Comment } = require('../../models');
 
 // get all posts
 router.get('/', (req, res) => {
-    Post.findAll({
-      attributes: ['id', 'title', 'content', 'created_at'],
-      include: [
-        {
+  Post.findAll({
+  order: [['createdAt', 'DESC']],
+    attributes: [
+      'id',
+      'content',
+      'title',
+      'createdAt',
+      'updatedAt'
+    ],
+    include: [
+      // include the Comment model here:
+      {
+        model: Comment,
+        attributes: ['id', 'comment_text', 'post_id', 'user_id','createdAt'],
+        include: {
           model: User,
           attributes: ['username']
         }
-      ]
-    })
+      },
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
+   })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
         console.log(err);
@@ -26,7 +42,7 @@ router.get('/', (req, res) => {
       where: {
         id: req.params.id
       },
-      attributes: ['id', 'title', 'content', 'created_at'],
+      attributes: ['id', 'title', 'content','createdAt'],
       include: [
         {
           model: User,
@@ -49,7 +65,6 @@ router.get('/', (req, res) => {
 
 // Add a post 
 router.post('/', (req, res) => {
-    // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
     Post.create({
       title: req.body.title,
       content: req.body.content,
