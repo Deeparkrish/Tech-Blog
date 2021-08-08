@@ -64,7 +64,7 @@ if (req.session.loggedIn) {
 res.render('signup');
 });
 
-//Render  Get Post by  user who has logged in 
+//Render a single Post Page
 router.get('/post/:id', (req, res) => {
 Post.findOne({
   where: {

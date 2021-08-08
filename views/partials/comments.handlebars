@@ -1,0 +1,13 @@
+<div class="comments">
+  {{!-- iterate over comments  snd get the details : Username, text and when it was created  --}}
+  {{#each this}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{ format_date createdAt}} 
+    </div>
+    <div class="text">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>

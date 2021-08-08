@@ -4,8 +4,8 @@ const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
-// const helpers = require('./utils/helpers');
-const hbs = exphbs.create({});
+const helpers = require('./utils/helpers');
+const hbs = exphbs.create({helpers});
 const session = require('express-session'); // connect to back end 
 const { truncate } = require('fs/promises');
 //store the sessions created by express-session into our database.
