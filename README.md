@@ -14,8 +14,8 @@
     <img src="https://img.shields.io/badge/-express-red" >
     <img src="https://img.shields.io/badge/-dtoenv-lightgrey" />
     <img src="https://img.shields.io/badge/-bulma-orange"/>
-    <img src="https://img.shields.io/badge/-express-session-lightgreen"/>
-    <img src="https://img.shields.io/badge/-connect-session-pink"/>
+    <img src="https://img.shields.io/badge/-express session-lightgreen"/>
+    <img src="https://img.shields.io/badge/-connect session-pink"/>
 
   
 
