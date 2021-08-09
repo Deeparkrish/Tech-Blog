@@ -20,7 +20,7 @@ Comment.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [10]
+        len: [1]
       }
     },
     // reference to the user who made the comment 

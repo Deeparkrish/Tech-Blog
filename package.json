@@ -1,17 +1,18 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "MVC - tech blog",
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Deeparkrish/tech-blog.git"
   },
-  "author": "",
+  "author": "Deepa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Deeparkrish/tech-blog/issues"
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/Deeparkrish/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "bulma": "^0.9.3",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -26,6 +28,7 @@
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.0",
+    "seed": "^0.4.4",
     "sequelize": "^6.6.5"
   },
   "devDependencies": {

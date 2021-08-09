@@ -2,7 +2,7 @@ async function editFormHandler(event) {
     event.preventDefault();
     // get the post title and content inputted in the text boxes 
     const title = document.querySelector('input[name="post-title"]').value;
-    const post_content = document.querySelector('input[name="post-content"]').value;
+    const content = document.querySelector('input[name="post-content"]').value;
     // split the route path and fetch id 
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1

@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-
+const withAuth = require('../../utils/auth');
 const { User, Post, Comment } = require('../../models');
 
+// Get all comments 
 router.get('/', (req, res) => {
     Comment.findAll({
         order: [['createdAt', 'DESC']],
@@ -32,7 +33,8 @@ router.get('/', (req, res) => {
       });
 });
 
-router.post('/', (req, res) => {
+//Create a comment 
+router.post('/',withAuth, (req, res) => {
   // check if  user is logged in 
   if (req.session) {
   Comment.create({
@@ -49,6 +51,7 @@ router.post('/', (req, res) => {
   }
 });
 
+//get Comment by id 
 router.get('/:id', (req, res) => {
     Comment.findOne({
       where: {
@@ -81,7 +84,7 @@ router.get('/:id', (req, res) => {
       
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id',withAuth, (req, res) => {
   if (req.session) {
     Comment.destroy({
       where: {
