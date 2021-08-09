@@ -9,11 +9,13 @@
      <img src="https://img.shields.io/github/languages/top/deeparkrish/tech-blog"/>
     <img src="https://img.shields.io/badge/MYSQL2-yellow" />
     <img src="https://img.shields.io/badge/Sequelize-blue"  />
+    <img src="https://img.shields.io/badge/-Handlebars-yellow"/>
     <img src="https://img.shields.io/badge/-node.js-green" />
     <img src="https://img.shields.io/badge/-express-red" >
     <img src="https://img.shields.io/badge/-dtoenv-lightgrey" />
     <img src="https://img.shields.io/badge/-bulma-orange"/>
-      <img src="https://img.shields.io/badge/-sessions-lightgreen"/>
+    <img src="https://img.shields.io/badge/-sessions-lightgreen"/>
+  
 
 
 </p>
@@ -83,7 +85,7 @@
   * Sessions allow our Express.js server to keep track of which user is making a request, and store useful data about them in memory.
   * The express-session library allows us to connect to the back end. 
   * The connect-session-sequelize library automatically stores the sessions created by express-   session into our database.
-  * Template engines allow you to write HTML code.Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other      text formats.They are used to deliver front-end app.
+  * Handlebars-A template engines that delivers the front-end app.
   * Bulma for styling
  
 
