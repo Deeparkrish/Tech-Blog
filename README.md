@@ -17,8 +17,8 @@
 </p>
 
  ## Description
-  A app that uses the latest technologies(MySQL2, Express, Sequelize) to build the back end for an e-commerce site.
-  
+  A app that provides a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and 
+  comment on other developers’ posts as well.This app is deployed on Heroku.
  
   ## Table of Contents 
   * [Description](#description)
@@ -104,7 +104,7 @@
   
 
   ## ProjectRepo 
-  Git hub link: https://github.com/Deeparkrish/e-commerce-backend
+  Heroku: https://deepa-tech-blog.herokuapp.com/
 
   ## Contribution
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
