@@ -88,13 +88,12 @@
 
 
   ## ModelAssociations
-  ![Webpage](https://github.com/Deeparkrish/e-commerce-backend/blob/master/src/IMG_6043.jpeg)
+  ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
 
   
   
   
   ##  Mockup
-   ![Webpage](https://github.com/Deeparkrish/e-commerce-backend/blob/master/src/Models.png)
 
 
   ## Testing
