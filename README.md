@@ -9,10 +9,14 @@
      <img src="https://img.shields.io/github/languages/top/deeparkrish/tech-blog"/>
     <img src="https://img.shields.io/badge/MYSQL2-yellow" />
     <img src="https://img.shields.io/badge/Sequelize-blue"  />
+    <img src="https://img.shields.io/badge/-Handlebars-yellow"/>
     <img src="https://img.shields.io/badge/-node.js-green" />
     <img src="https://img.shields.io/badge/-express-red" >
     <img src="https://img.shields.io/badge/-dtoenv-lightgrey" />
     <img src="https://img.shields.io/badge/-bulma-orange"/>
+    <img src="https://img.shields.io/badge/-sessions-lightgreen"/>
+  
+
 
 </p>
 
@@ -79,22 +83,20 @@
   * Sequelize ORM  sits between the server's API endpoints and the SQL database to   translate data between JavaScript and SQL.
   * Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
   * Sessions allow our Express.js server to keep track of which user is making a request, and store useful data about them in memory.
-  * An express-session is an Express.js middleware that uses sessions,a mechanism that helps applications to determine whether multiple requests came from the        same client.
-  * Connect-session-sequelize is a SQL session store using Sequelize.js
-  * The express-session library allows us to connect to the back end. The connect-session-sequelize library automatically stores the sessions created by express-   session into our database.
-  * Template engines allow you to write HTML code.Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other      text formats.They are used to deliver front-end app.
+  * The express-session library allows us to connect to the back end. 
+  * The connect-session-sequelize library automatically stores the sessions created by express-   session into our database.
+  * Handlebars-A template engines that delivers the front-end app.
   * Bulma for styling
  
 
 
   ## ModelAssociations
-  ![Webpage](https://github.com/Deeparkrish/e-commerce-backend/blob/master/src/IMG_6043.jpeg)
+  ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
 
   
   
   
   ##  Mockup
-   ![Webpage](https://github.com/Deeparkrish/e-commerce-backend/blob/master/src/Models.png)
 
 
   ## Testing
@@ -108,5 +110,6 @@
 
   ## Contribution
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
+  Credits :MVC - Controller module 
 
 
