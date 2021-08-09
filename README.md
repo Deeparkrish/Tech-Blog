@@ -29,7 +29,6 @@
   * [Technologies](#technologies)
   * [ModelAssociations](#modelassociations)
   * [MockUp](#mockup)
-  * [ProjectDemo](#projectdemo)
   * [Testing](#testing)
   * [ProjectRepo](#projectrepo)
   * [Contribution](#contribution)
