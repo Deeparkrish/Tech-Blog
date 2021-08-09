@@ -3,12 +3,12 @@
 # e-commerce-backend
 
   <p align="left">
-    <img src="https://img.shields.io/github/repo-size/deeparkrish/e-commerce-backend" />
-    <img src="https://img.shields.io/github/issues/deeparkrish/e-commerce-backend" />
-    <img src="https://img.shields.io/github/last-commit/deeparkrish/e-commerce-backend" >       
+    <img src="https://img.shields.io/github/repo-size/deeparkrish/tech-blog" />
+    <img src="https://img.shields.io/github/issues/deeparkrish/tech-blog" />
+    <img src="https://img.shields.io/github/last-commit/deeparkrish/tech-blog" >       
   </p>
   <p align="left"> 
-     <img src="https://img.shields.io/github/languages/top/deeparkrish/e-commerce-backend"/>
+     <img src="https://img.shields.io/github/languages/top/deeparkrish/tech-blog"/>
     <img src="https://img.shields.io/badge/MYSQL2-yellow" />
     <img src="https://img.shields.io/badge/Sequelize-blue"  />
     <img src="https://img.shields.io/badge/-node.js-green" />
