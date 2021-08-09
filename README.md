@@ -1,7 +1,5 @@
 # tech-blog
 
-# e-commerce-backend
-
   <p align="left">
     <img src="https://img.shields.io/github/repo-size/deeparkrish/tech-blog" />
     <img src="https://img.shields.io/github/issues/deeparkrish/tech-blog" />
