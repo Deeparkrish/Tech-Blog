@@ -67,9 +67,9 @@ const bcrypt = require('bcrypt');
           return newUserData; //  return the hashed password 
         },
       // set up beforeUpdate lifecycle "hook" functionality
-    async beforeUpdate(updatedUserData) {
-    updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-    return updatedUserData;
+      async beforeUpdate(updatedUserData) {
+      updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+      return updatedUserData;
   }
       },
           // table defintions 
