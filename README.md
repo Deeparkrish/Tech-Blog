@@ -107,5 +107,6 @@
 
   ## Contribution
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
+  Credits :MVC - Controller module 
 
 
