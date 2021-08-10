@@ -14,7 +14,9 @@
     <img src="https://img.shields.io/badge/-express-red" >
     <img src="https://img.shields.io/badge/-dtoenv-lightgrey" />
     <img src="https://img.shields.io/badge/-bulma-orange"/>
-    <img src="https://img.shields.io/badge/-sessions-lightgreen"/>
+    <img src="https://img.shields.io/badge/-express session-lightgreen"/>
+    <img src="https://img.shields.io/badge/-connect session-pink"/>
+
   
 
 
@@ -66,7 +68,7 @@
   * When he revisits the site at a later time and choose to sign in,he will be prompted to enter my username and password
   * Once signed in,he sees navigation links for the homepage, the dashboard, and the option to log out
   * When he clicks  on the homepage option in the navigation he is taken to the homepage and presented with existing blog posts that include,
-  the post title and the date created.
+    the post title and the date created.
   * Upon clicking on an existing blog post,he is provided with the post title, contents, post creator’s username, and 
     date created for that post and has an option to leave a comment on the post.
   * As he enters a comment and hits the submit button, the comment is saved and post is updated to display the comment.
@@ -79,12 +81,13 @@
   ## Technologies 
    The MySQL2  and Sequelize packages to connect your Express.js API to a MySQL database and the dotenv package to use              
    environment variables to store sensitive data, like MySQL username, password, and database name.
-   * bcrypt -A library to help you hash passwords.
+  * bcrypt -A library to help you hash passwords.
   * Sequelize ORM  sits between the server's API endpoints and the SQL database to   translate data between JavaScript and SQL.
   * Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
   * Sessions allow our Express.js server to keep track of which user is making a request, and store useful data about them in memory.
-  * The express-session library allows us to connect to the back end. 
-  * The connect-session-sequelize library automatically stores the sessions created by express-   session into our database.
+  * The express-session library allows us to connect to the back end. It stores the session data on the client in a cookie. When you are idle on the site
+    for more than a set time, the cookie will expire and you will be required to log in again to start a new session.
+  * The connect-session-sequelize library automatically stores the sessions created by express-session into our database.
   * Handlebars-A template engines that delivers the front-end app.
   * Bulma for styling
  
