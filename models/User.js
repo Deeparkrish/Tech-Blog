@@ -77,7 +77,8 @@ const bcrypt = require('bcrypt');
           timestamps: false,
           freezeTableName: true,
           underscored: true,
-          modelName: 'user'
+          modelName: 'user',
+          tableName: 'Users',
     }
  )
  module.exports =User;
