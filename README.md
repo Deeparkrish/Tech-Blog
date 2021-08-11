@@ -94,13 +94,14 @@
 
 
   ## ModelAssociations
+  ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/MVC.jpeg)
   ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
-
+  
   
   
   
   ##  Mockup
-
+  
 
   ## Testing
   ####  CRUD operations can be testted using following applications:
