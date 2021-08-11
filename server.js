@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3001; // assign port number
 const sess = {
   secret: 'Super secret secret', // will be replaced by actual secret codes stored in .env 
   cookie: {// Session will automatically expire in 5 minutes
-    expires: 3000},
+    expires: 600000},
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -40,5 +40,5 @@ app.use(routes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('Now listening at'+`${PORT}`));
 });
