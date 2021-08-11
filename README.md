@@ -33,6 +33,7 @@
   * [License](#license)
   * [Process](#process)
   * [Technologies](#technologies)
+  * [MVCAssociations](#mvcassociations)
   * [ModelAssociations](#modelassociations)
   * [MockUp](#mockup)
   * [Testing](#testing)
@@ -92,15 +93,14 @@
   * Bulma for styling
  
 
-
-  ## ModelAssociations
+  ## MVCAssociation
   ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/MVC.jpeg)
+  
+  ## ModelAssociations
   ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
   
-  
-  
-  
   ##  Mockup
+  ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/hompage.png)
   
 
   ## Testing
