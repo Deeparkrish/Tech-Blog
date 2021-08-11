@@ -35,6 +35,7 @@
   * [Technologies](#technologies)
   * [MVCAssociations](#mvcassociations)
   * [ModelAssociations](#modelassociations)
+  * [ProjectDemo](#projectdemo)
   * [MockUp](#mockup)
   * [Testing](#testing)
   * [ProjectRepo](#projectrepo)
@@ -99,8 +100,9 @@
   ## ModelAssociations
   ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
   
-  ##  Mockup
+  ## ProjectDemo
   [![Youtube](https://img.youtube.com/vi/RNpZXHQjWBA/0.jpg)](https://www.youtube.com/embed/RNpZXHQjWBA)
+  ##  Mockup
   ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/hompage.png)
   
 
